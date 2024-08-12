@@ -14,10 +14,8 @@ from scipy.stats import uniform, randint
 import shap
 
 # Load data from spreadsheet
-#data = pd.read_excel('/Users/neil/Documents/Medical School/Research/Code/Training and Validation Datasets/Elastic Net Selected Factors + Clinical.xlsx')
-
-data = pd.read_excel('/Users/neil/Documents/Medical School/Research/Code/Training and Validation Datasets/Lymphedema 5 Factors.xlsx')
-# Assume the last column is the target and the rest are features
+data = pd.read_excel('input_file_path.xlsx')
+# Assume the last column is the target and the rest from third column on are features
 X = data.iloc[:, 2:-1].values
 y = data.iloc[:, -1].values
 print(y)
