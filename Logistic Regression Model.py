@@ -13,7 +13,7 @@ from scipy.stats import uniform, randint
 import shap
 
 # Load data from spreadsheet
-data = pd.read_excel('/Users/neil/Documents/Medical School/Research/Code/Training and Validation Datasets/Continuous Clinical Risk Scores - Alison.xlsx')
+data = pd.read_excel('input_file_path.xlsx')
 
 # Assume the last column is the target and the rest are features
 X = data.iloc[:, 2:-1].values
